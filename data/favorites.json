@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 1778109222882,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-06T23:13:42.882Z"
+  },
+  {
+    "id": 1778110078190,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-06T23:27:58.190Z"
+  },
+  {
+    "id": 1778110448273,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-06T23:34:08.273Z"
+  },
+  {
+    "id": 1778111046985,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-06T23:44:06.985Z"
+  }
+]
