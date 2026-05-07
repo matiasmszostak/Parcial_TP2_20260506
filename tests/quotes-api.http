@@ -11,8 +11,7 @@
 @favoriteId = 1778111031775
 
 ### Verificación de estado del servidor (Health Check)
-GET {{baseUrl}}/health
-
+GET http://localhost:3000/health
 
 # ============================================================
 # 1. GET /quotes/random
