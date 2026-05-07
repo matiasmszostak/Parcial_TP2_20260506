@@ -6,9 +6,13 @@
 
 @baseUrl = http://localhost:3000/api/v1
 
+# Token de ejemplo
+# Para obtener uno nuevo, ejecutar primero auth.http
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsdW1ubyIsImlhdCI6MTc3ODExMzcwMSwiZXhwIjoxNzc4MTIwOTAxfQ.gkvHf3_aZk_3KeLGBzMFE1bYYN7GDopPCi7V5_0yE60
+
 # Variable para reutilizar el id del favorito creado.
 # Completar manualmente con el id devuelto por el POST.
-@favoriteId = 1778110448273
+@favoriteId = 1778110078190
 
 ### Verificación de estado del servidor (Health Check)
 GET http://localhost:3000/health
@@ -21,6 +25,8 @@ GET http://localhost:3000/health
 ### Obtener frase aleatoria
 GET {{baseUrl}}/quotes/random
 Content-Type: application/json
+Authorization: Bearer {{token}}
+
 
 
 # ============================================================
@@ -32,6 +38,7 @@ Content-Type: application/json
 ### Agregar frase a favoritos (caso exitoso)
 POST {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "quote": "The only way to do great work is to love what you do.",
@@ -43,6 +50,7 @@ Content-Type: application/json
 ### Agregar otra frase para tener mas de un favorito
 POST {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "quote": "In the middle of difficulty lies opportunity.",
@@ -54,6 +62,7 @@ Content-Type: application/json
 ### Error 400 - body sin campo quote
 POST {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "author": "Autor sin frase"
@@ -64,6 +73,7 @@ Content-Type: application/json
 ### Error 400 - body sin campo author
 POST {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "quote": "Una frase sin autor"
@@ -74,6 +84,7 @@ Content-Type: application/json
 ### Error 400 - body completamente vacio
 POST {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {}
 
@@ -86,6 +97,7 @@ Content-Type: application/json
 ### Listar todos los favoritos
 GET {{baseUrl}}/quotes/favorites
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 ###
 
@@ -95,7 +107,7 @@ Content-Type: application/json
 ### Verificar persistencia tras reinicio del servidor
 GET {{baseUrl}}/quotes/favorites
 Content-Type: application/json
-
+Authorization: Bearer {{token}}
 
 # ============================================================
 # 4. DELETE /quotes/favorites/:id
@@ -105,9 +117,11 @@ Content-Type: application/json
 ### Eliminar favorito por id (reemplazar @favoriteId antes de ejecutar)
 DELETE {{baseUrl}}/quotes/favorites/{{favoriteId}}
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 ###
 
 ### Error 404 - id que no existe
 DELETE {{baseUrl}}/quotes/favorites/99999999999
 Content-Type: application/json
+Authorization: Bearer {{token}}
