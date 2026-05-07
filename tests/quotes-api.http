@@ -8,11 +8,10 @@
 
 # Variable para reutilizar el id del favorito creado.
 # Completar manualmente con el id devuelto por el POST.
-@favoriteId = 1778111031775
+@favoriteId = 1778110448273
 
 ### Verificación de estado del servidor (Health Check)
-GET {{baseUrl}}/health
-
+GET http://localhost:3000/health
 
 # ============================================================
 # 1. GET /quotes/random

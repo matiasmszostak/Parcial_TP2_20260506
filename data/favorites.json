@@ -12,15 +12,39 @@
     "createdAt": "2026-05-06T23:27:58.190Z"
   },
   {
-    "id": 1778110448273,
-    "quote": "In the middle of difficulty lies opportunity.",
-    "author": "Albert Einstein",
-    "createdAt": "2026-05-06T23:34:08.273Z"
-  },
-  {
     "id": 1778111046985,
     "quote": "In the middle of difficulty lies opportunity.",
     "author": "Albert Einstein",
     "createdAt": "2026-05-06T23:44:06.985Z"
+  },
+  {
+    "id": 1778112655722,
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "createdAt": "2026-05-07T00:10:55.722Z"
+  },
+  {
+    "id": 1778112659357,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-07T00:10:59.357Z"
+  },
+  {
+    "id": 1778112757222,
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "createdAt": "2026-05-07T00:12:37.222Z"
+  },
+  {
+    "id": 1778112778413,
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "createdAt": "2026-05-07T00:12:58.413Z"
+  },
+  {
+    "id": 1778112779875,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "createdAt": "2026-05-07T00:12:59.875Z"
   }
 ]
